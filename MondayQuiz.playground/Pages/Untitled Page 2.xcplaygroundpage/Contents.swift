@@ -12,6 +12,27 @@ Don't forget to call the function at the bottom
 
 import Foundation
 
+var ages = ["Andrew": 29, "Hyrum": 29, "Libby": 23, "Mike": 29, "Scott": 31]
+
+func myDic(var ages: [String: Int]) -> [String: Int] {
+    for (names, age) in ages {
+        ages[names] = age + 1
+        
+    }
+    return ages
+}
+
+myDic(ages)
+
+//ages["Andrew"] = 29 + 1
+//
+//print(ages["Andrew"])
+
+
+
+
+
+
 
 
 //: [Previous](@previous)
